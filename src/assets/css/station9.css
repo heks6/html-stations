@@ -1,0 +1,63 @@
+
+header {
+	background-color: #ffffff;
+}
+
+footer {
+	background-color: #ffffff;
+}
+
+body {
+	background-color: #c4c4c4;
+}
+
+main {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+	padding: 1px;
+	margin: 20px;
+	background-color: #fff;
+	width: 288px;
+}
+
+.card__title {
+	color: #282828;
+	font-size: 14px;
+}
+
+.card__img-top {
+	width: 288px;
+	height: 182px;
+	margin-bottom: 1px;
+}
+
+.card__description {
+    color: #282828;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	/*画面サイズが768px以下の場合に適用*/
+	.card__title {
+		font-size: 10px;
+	}
+	
+	.card__description {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	/*画面サイズが320px以下の場合に適用*/
+	.card__description {
+		display: none;
+	}
+
+	.card__title {
+		font-size: 10px;
+	}
+}
